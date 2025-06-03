@@ -4,7 +4,7 @@ import useSWR, { mutate } from 'swr'
 
 const API_URL = '/api/time'
 
-const fetcher = (url: string) => 
+const fetcher = (_url: string) => 
   new Promise((resolve) => setTimeout(resolve, 3000))
     .then(() => ({
       datetime: new Date().toISOString(),

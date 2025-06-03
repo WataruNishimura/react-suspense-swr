@@ -9,7 +9,7 @@ export const Route = createFileRoute('/multiple-suspense')({
 const fetcher = (url: string, delay: number = 2000) =>
   new Promise<any>((resolve) => {
     setTimeout(() => {
-      const data = {
+      const data: Record<string, any> = {
         user: { id: 1, name: 'John Doe', email: 'john@example.com' },
         posts: [
           { id: 1, title: 'First Post', content: 'This is my first post' },
